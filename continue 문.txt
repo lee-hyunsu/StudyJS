@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        for(var i = 0; i < 5; i++){
+            continue;
+            alert(i);
+        }
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>
+
+----------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+
+        var output = 0;
+
+        for(var i = 1; i <= 10; i++){
+            if(i % 2 == 1){
+                continue;
+            }
+            output += i;
+        }
+        alert(output);
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

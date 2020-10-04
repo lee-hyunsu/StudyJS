@@ -1,0 +1,42 @@
+------------------------------내장 함수 출력----------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        alert(alert);
+        alert(prompt);
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>
+
+
+------------------------------함수 호출---------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        var 함수 = function(){
+            var output = prompt('숫자를 입력', '');
+            alert(output);
+        };
+
+        함수();
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>
+
+
+선언적 함수와 익명 함수의 순서
+
+선언적 함수가 먼저 생성되고 익명 함수가 나중에 생성됨...

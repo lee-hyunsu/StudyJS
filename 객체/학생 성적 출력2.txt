@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        function makeStudent(name, korean, math, english){
+            var willReturn = {
+                이름 : name,
+                국어 : korean,
+                수힉 : math,
+                영어 : english,
+
+                getSum : function(){
+                    return this.국어 + this.수학 + this.영어;
+                },
+
+                getAverage : function(){
+                    return this.getSum() / 4;
+                },
+
+                toString : function(){
+                    return this.이름 + '\t' + this.getSum() + '\t' + this.getAverage();
+                }
+            };
+            return willReturn;
+        }
+
+        var students = [];
+
+        students.push(makeStudent('이현수', 100, 100, 100));
+        students.push(makeStudent('양성원', 44, 80, 72));
+        students.push(makeStudent('김승현', 68, 64, 70));
+        students.push(makeStudent('김도균', 92, 100, 88));
+        students.push(makeStudent('김세훈', 56, 78, 49));
+
+        var output = '이름\t총점\t평균\n';
+        for(var i in students){
+            output += students[i].toString() + '\n';
+        }
+        alert(output);
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

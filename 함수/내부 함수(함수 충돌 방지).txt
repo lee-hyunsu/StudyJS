@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        function pythagoras(width, height){
+            function square(x){
+                return x * x;
+            }
+            return Math.sqrt(square(width) + square(height));
+        }
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

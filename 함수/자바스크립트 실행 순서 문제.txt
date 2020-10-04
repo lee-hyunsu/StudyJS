@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        for(var i = 0; i < 3; i++){
+            setTimeout(function(){
+                alert(i);
+            }, 0);
+        }
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>
+
+
+setTimeout() 함수를 호출하는 시점이 반복문이 끝난 이후라서 결과는 3, 3, 3출력
+
+
+
+---------------------------------해결책--------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        for(var i = 0; i < 3; i++){
+            (function(closed_i){
+                setTimeout(function(){
+                    alert(closed_i);
+                }, 0);
+            })(i);
+        }
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

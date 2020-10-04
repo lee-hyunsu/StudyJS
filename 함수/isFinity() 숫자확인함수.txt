@@ -1,0 +1,39 @@
+------------------------------isFinite() 함수---------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        var number = 1 / 0;
+        alert(number + ' : ' + isFinite(number));
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>
+
+
+-------------------------Infinity 값 비교---------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        var value = -10 / 0;
+
+        if(value == Infinity){
+            alert('Infinity입니다.');
+        }else{
+            alert('Infinity가 아닙니다.');
+        }
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

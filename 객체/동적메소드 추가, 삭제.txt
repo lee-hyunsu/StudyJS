@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        var student = {};
+
+        student.이름 = '이현수';
+        student.취미 = '악기';
+        student.특기 = '프로그래밍';
+        student.장래희망 = '프론트엔드 개발자';
+
+        student.toString = function(){
+            var output = '';
+            for(var key in this){
+                if(key != 'toString'){
+                    output += key + '\t' + this[key] + '\n';
+                }
+            }
+            return output;
+        };
+        alert(student.toString());
+
+        delete(student.장래희망);
+
+        alert(student);
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        function test(name){
+            var output = 'Hello ' + name + ' . . !';
+            return function(){
+                alert(output);
+            };
+        }
+        //변수 선언
+        var test_1 = test('Web');
+        var test_2 = test('JavaScript');
+
+        //함수 호출
+        test_1();
+        test_2();
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

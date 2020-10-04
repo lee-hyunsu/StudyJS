@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        function f(){
+            var length = arguments.length;
+
+            if(length == 0){
+
+            }else if(length == 1){
+
+            }else{
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

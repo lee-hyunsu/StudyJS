@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        function returnFuction(){
+            alert('문장 a');
+            return;
+            alert('문장 b');
+        }
+        returnFuction();
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

@@ -1,0 +1,28 @@
+---------------------------객체 복사 및 JSON.stringify()-----------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        function clone(obj){
+            var output = {};
+            for(var i in obj){
+                output[i] = obj[i];
+            }
+            return output;
+        }
+        var original = {a : 10, b : 20};
+        var referenced = original;
+        var cloned = clone(original);
+
+        original.a = 20;
+
+        alert(JSON.stringify(referenced, null, 2))
+        alert(JSON.stringify(cloned, null, 2))
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

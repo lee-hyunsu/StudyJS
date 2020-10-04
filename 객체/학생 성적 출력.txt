@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <title>hyunsu</title>
+    <script>
+        var students = [];
+
+        students.push({ 이름 : '이현수', 국어 : 100, 수학 : 100, 영어 : 100});
+        students.push({ 이름 : '양성원', 국어 : 50, 수학 : 50, 영어 : 50});
+        students.push({ 이름 : '김승현', 국어 : 80, 수학 : 80, 영어 : 85});
+        students.push({ 이름 : '김도균', 국어 : 88, 수학 : 100, 영어 : 92});
+        students.push({ 이름 : '김세훈', 국어 : 93, 수학 : 66, 영어 : 57});
+
+        for(var i in students){
+            students[i].getSum = function(){
+                return this.국어 + this.수학 + this.영어;            
+        };
+
+        students[i].getAverage = function(){
+            return this.getSum() / 4;
+        };
+        }
+
+        var output = '이름\t총점\t평균\n';
+        for(var i in students){
+            with(students[i]){
+                output += 이름 + '\t' + getSum() + '\t' + getAverage() + '\n';
+            }
+        }
+        alert(output);
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>

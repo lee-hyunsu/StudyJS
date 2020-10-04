@@ -1,0 +1,19 @@
+------------Array() 함수 호출------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hyunsu</title>
+    <script>
+        var array1 = Array();
+        var array2 = Array(10);
+        var array3 = Array(273, 103, 57, 32);
+
+        alert(array1 + '\n' + array2 + '\n' + array3);
+    </script>
+</head>
+<body>
+    hyunsu
+</body>
+</html>
